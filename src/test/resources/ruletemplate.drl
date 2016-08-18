@@ -1,0 +1,14 @@
+package testpackage
+
+declare MyFact
+%s
+  eligible : Boolean
+end
+
+
+rule "%s"
+when
+	$f:MyFact(%s)
+then
+	$f.setEligible(true);
+end
